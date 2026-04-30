@@ -25,28 +25,15 @@ console.log("a <= b:", a <= b);
 
 
 
-console.log("Outside block, l:", l); // 5
-console.log("Outside block, v:", v); // 20
-console.log("Outside block, v:", v); // 20
+console.log("Outside block, l:", l); 
+console.log("Outside block, v:", v); 
+console.log("Outside block, v:", v); 
 
 let arr = [1, "Aaryan", 3, true, 5];
 let arr2 = [1, 2, 3, 4, 5];
 
-// for (let i = 0; i < arr2.length; i++) {  
-//     console.log("Element at index after * 2 ", i, ":", arr2[i] * 2);
-// }
-// let count = arr2.length - 1;
-// while (count >= 0) {
-//     console.log("Element at index after * 2 ", count, ":", arr2[count] * 2);
-//     count--;
-// }
 
-// arr2.forEach(function(x) {
-//     console.log("Element after * 2 ", x, ":", x * 2);
-// });
-// arr2.map(function(x) {
-//     console.log("Element after * 2 ", x, ":", x * 2);
-// });
+
 
 let i = 0;
 let j = 10;
@@ -57,7 +44,7 @@ if(i > j) {
     console.log("j is greater");
 }
 
-// Calendar --> Week --> final (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)
+
 
 let choice = "a";
 
