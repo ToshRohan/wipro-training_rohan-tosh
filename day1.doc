@@ -1,0 +1,104 @@
+1. Variables and Strings
+Declared variables using let
+Performed string operations:
+str.length
+str.toUpperCase()
+str.toLowerCase()
+str.substring(1, 5)
+
+Used to get length, change case, and extract part of a string.
+
+2. Arithmetic Operations
+
+Performed basic math:
+
+a + b
+a - b
+a * b
+a / b
+a % b
+
+Used for addition, subtraction, multiplication, division, and remainder.
+
+3. Comparison (Logical Operations)
+
+Checked conditions:
+
+a > b
+a < b
+a == b
+a != b
+a >= b
+a <= b
+
+Returns boolean values (true or false).
+
+4. Objects
+
+Created an object:
+
+let obj = { name, age, city };
+
+Accessed properties using dot notation:
+
+obj.name
+obj.age
+obj.city
+5. Dynamic Typing
+
+Variable type can change:
+
+let str2 = "Aryan";
+str2 = 23;
+
+JavaScript allows changing data types at runtime.
+
+6. Functions
+
+Simple function for addition:
+
+function add(a, b) {
+    return a + b;
+}
+7. const, let, var (Scope)
+const → fixed value
+let → block scoped
+var → function scoped (can leak outside block)
+
+Example shows difference between block scope and global scope.
+
+8. Arrays
+let arr = [1, "Aaryan", 3, true, 5];
+
+Stores mixed data types.
+
+9. Conditions
+
+If-else example:
+
+if (i > j) { ... } else { ... }
+
+Used for decision making.
+
+10. Switch Case
+switch(choice) {
+    case "A":
+    case "B":
+    default:
+}
+
+Used for multiple conditions.
+
+11. Type Checking
+typeof variable
+
+Used to check data type of values.
+
+12. Loop with Condition
+for (let i = 0; i < arr.length; i++) {
+    if(typeof arr[i] === "number") {
+        console.log(arr[i]);
+    }
+}
+
+Loops through array and prints only numbers.
