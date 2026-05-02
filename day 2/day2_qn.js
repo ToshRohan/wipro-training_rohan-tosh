@@ -1,26 +1,35 @@
 //qn1
 function formatGuests(names) {
-    names.shift(); // remove host
+    let result = [];
 
-    return names
-        .map(name => `Guest: ${name}`)
-        .join("\n");
+    for (let i = 1; i < names.length; i++) {
+        result.push("Guest: " + names[i]);
+    }
+
+    return result.join("\n");
 }
 
-//qn2
-const getHighNumbers = (arr) => {
-    const threshold = Math.floor(Math.random() * 50) + 1;
+let guests = ["Aaryan", "Arush", "Arushi"];
 
-    return arr
-        .filter(item => typeof item === "number")
-        .filter(num => num > threshold);
-};
+console.log(formatGuests(guests));
+
+//qn2
+let arr = [1, 2, true, "name", 5, 40, "50", 80];
+
+let threshold = Math.floor(Math.random() * 50) + 1;
+
+console.log("Threshold:", threshold);
+
+arr
+  .filter(x => typeof x === "number") 
+  .filter(x => x > threshold)          
+  .forEach(x => console.log("High number:", x));
 
 //qn3
 const prices = ["100", "200", "50", "handling"];
 
 const calculateTotal = (arr) => {
-    arr.pop(); // remove handling fee
+    arr.pop(); 
 
     const sum = arr
         .map(price => Number(price))
