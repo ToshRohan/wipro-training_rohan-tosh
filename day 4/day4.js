@@ -8,7 +8,12 @@ function getData() {
  
 getData().then((data) => {
     console.log(data);
+<<<<<<< HEAD
 }).catch((error) => {
+=======
+})
+.catch((error) => {
+>>>>>>> f845080 (new again)
     console.error("Error:", error);
 });
 // setTimeout(() => {
