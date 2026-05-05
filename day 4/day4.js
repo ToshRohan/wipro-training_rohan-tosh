@@ -6,11 +6,9 @@ function getData() {
     });
 }
  
-getData()
-.then((data) => {
+getData().then((data) => {
     console.log(data);
-})
-.catch((error) => {
+}).catch((error) => {
     console.error("Error:", error);
 });
 // setTimeout(() => {

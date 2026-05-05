@@ -1,6 +1,0 @@
-getData() returns a Promise that simulates getting data.
-Inside it, setTimeout waits 2 seconds, then calls resolve("Data received").
-resolve sends the result to .then() → it prints "Data received".
-.catch() is there for errors, but never runs because no reject is used.
-The commented setTimeout is just a simple delay (no Promise).
-The commented setInterval would run repeatedly every 3 seconds.
