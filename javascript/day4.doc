@@ -88,6 +88,8 @@ JSONPlaceholder
 
 Sample Code Pattern Used:
 
+
+
 fetch("API_URL")
     .then(res => res.json())
     .then(data => data.filter(condition))
