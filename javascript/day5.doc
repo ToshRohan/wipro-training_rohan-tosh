@@ -1,0 +1,103 @@
+JavaScript OOP – Core Concepts (with Pseudocode)
+1. Class & Object
+
+A class is a blueprint. An object is an instance of that blueprint.
+
+Pseudocode:
+Class Animal
+    property: name
+
+    method speak()
+        print "Animal makes sound"
+
+Create object dog from Animal
+dog.name = "Tom"
+dog.speak()
+JS Reality:
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak() {
+        console.log("Animal makes sound");
+    }
+}
+2. Constructor
+
+Special method used to initialize object properties when object is created.
+
+Pseudocode:
+Class Person
+    constructor(name, age)
+        set this.name = name
+        set this.age = age
+
+Create object p1 with ("Aman", 20)
+3. Encapsulation (Data Hiding)
+
+Restrict direct access to data. Use methods to control it.
+
+Pseudocode:
+Class BankAccount
+    private balance = 0
+
+    method deposit(amount)
+        if amount > 0
+            balance += amount
+
+    method getBalance()
+        return balance
+
+Key idea:
+→ Data is hidden
+→ Access is controlled
+
+4. Inheritance
+
+One class inherits properties/methods from another.
+
+Pseudocode:
+Class Animal
+    method speak()
+
+Class Dog inherits Animal
+    method bark()
+JS:
+class Dog extends Animal {}
+5. Polymorphism
+
+Same method name, different behavior depending on object.
+
+Pseudocode:
+Class Shape
+    method draw()
+
+Class Circle inherits Shape
+    override draw() → "Circle"
+
+Class Square inherits Shape
+    override draw() → "Square"
+
+For each shape in list
+    shape.draw()
+
+Key idea:
+→ Same interface, different implementation
+
+6. Abstraction
+
+Hide unnecessary details, show only essential features.
+
+Pseudocode:
+Class Car
+    method startEngine()  // internal logic hidden
+
+User only calls:
+car.startEngine()
+
+In JS, abstraction is usually done via:
+
+classes
+private fields (#)
+methods
