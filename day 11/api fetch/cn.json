@@ -1,0 +1,59 @@
+{
+  "director": "Christopher Nolan",
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "year": 2010,
+      "genre": ["Sci-Fi", "Thriller"],
+      "rating": 8.8,
+      "durationMin": 148,
+      "mainCast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"]
+    },
+    {
+      "id": 2,
+      "title": "Interstellar",
+      "year": 2014,
+      "genre": ["Sci-Fi", "Drama"],
+      "rating": 8.7,
+      "durationMin": 169,
+      "mainCast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "genre": ["Action", "Crime", "Drama"],
+      "rating": 9.0,
+      "durationMin": 152,
+      "mainCast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+    },
+    {
+      "id": 4,
+      "title": "Dunkirk",
+      "year": 2017,
+      "genre": ["War", "Drama", "Thriller"],
+      "rating": 7.8,
+      "durationMin": 106,
+      "mainCast": ["Fionn Whitehead", "Tom Hardy", "Harry Styles"]
+    },
+    {
+      "id": 5,
+      "title": "Tenet",
+      "year": 2020,
+      "genre": ["Sci-Fi", "Action", "Thriller"],
+      "rating": 7.3,
+      "durationMin": 150,
+      "mainCast": ["John David Washington", "Robert Pattinson", "Elizabeth Debicki"]
+    },
+    {
+      "id": 6,
+      "title": "Oppenheimer",
+      "year": 2023,
+      "genre": ["Biography", "Drama", "History"],
+      "rating": 8.6,
+      "durationMin": 180,
+      "mainCast": ["Cillian Murphy", "Emily Blunt", "Matt Damon"]
+    }
+  ]
+}
