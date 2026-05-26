@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: Day21
+        working-directory: Day 21
 
     steps:
     - uses: actions/checkout@v4
