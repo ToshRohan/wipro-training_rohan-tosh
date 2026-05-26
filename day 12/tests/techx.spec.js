@@ -14,3 +14,36 @@ test('check title', async ({ page }) => {
     await consultBtn.click();
     expect(page.url()).toBe("https://www.techxincorporation.com/contact");
 });
+
+
+
+
+
+
+// // import {test, expect} from '@playwright/test';
+// // test('check title', async ({page}) => {
+// //     await page.goto("https://www.youtube.com/");}
+// //     const button = page.getByRole("button", { name: "history" });
+// //     await button.click();
+// //     expect(page.url()).toBe("https://www.youtube.com/feed/history");
+// // );
+
+// import { test, expect } from '@playwright/test';
+
+// test('check youtube history page', async ({ page }) => {
+
+//     // open youtube
+//     await page.goto("https://www.youtube.com/");
+
+//     // locate history button
+//     const button = page.getByRole("link", { name: /History/i });
+
+//     // click button
+//     await button.click();
+
+//     // verify url
+//     await expect(page).toHaveURL(
+//         "https://www.youtube.com/feed/history"
+//     );
+
+// });
