@@ -1,3 +1,4 @@
+
 name: Playwright Tests + Allure Report
 
 on:
@@ -9,75 +10,53 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+
+    defaults:
+      run:
+        working-directory: ./day 21
 
     steps:
-      # Checkout repo
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Setup Node
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # Debug (IMPORTANT - remove later if everything works)
-      - name: Debug project files
-        run: |
-          pwd
-          ls -la
-          echo "---- package.json ----"
-          cat package.json || true
-          echo "---- package-lock.json ----"
-          cat package-lock.json || true
-
-      # Install dependencies (using install instead of ci to avoid lock issues)
       - name: Install dependencies
         run: npm install
 
-      # Install Playwright browsers
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      # Run tests
-      - name: Run Playwright tests
+      - name: Run tests
         run: npx playwright test
 
-      # Install Allure CLI
       - name: Install Allure CLI
         run: npm install -g allure-commandline --save-dev
 
-      # Generate Allure report
       - name: Generate Allure report
         run: allure generate allure-results --clean -o allure-report
 
-      # Upload report as artifact
-      - name: Upload Allure report artifact
+      - name: Upload Allure report
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
-          path: allure-report
+          path: day 21/allure-report
 
   deploy:
     needs: test
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # Download report from previous job
-      - name: Download Allure report
-        uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4
         with:
           name: allure-report
           path: allure-report
 
-      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
