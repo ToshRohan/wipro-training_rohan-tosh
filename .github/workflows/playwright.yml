@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: Day21
+        working-directory: day 21
     strategy:
       fail-fast: false
       matrix:
